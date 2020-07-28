@@ -286,8 +286,6 @@ github.com/mitchellh/iochan v1.0.0/go.mod h1:JwYml1nuB7xOzsp52dPpHFffvOCDupsG0Qu
 github.com/mitchellh/mapstructure v0.0.0-20160808181253-ca63d7c062ee/go.mod h1:FVVH3fgwuzCH5S8UJGiWEs2h04kUh9fWfEaFds41c1Y=
 github.com/mitchellh/mapstructure v1.1.2 h1:fmNYVwqnSfB9mZU6OS2O6GsXM+wcskZDuKQzvN1EDeE=
 github.com/mitchellh/mapstructure v1.1.2/go.mod h1:FVVH3fgwuzCH5S8UJGiWEs2h04kUh9fWfEaFds41c1Y=
-github.com/mloves0824/libkv-etcdv3-store v1.1.7 h1:Z+9ycZ5WNB2TJJxKux7YCt/M95W8Hljyz+qZijD/JLI=
-github.com/mloves0824/libkv-etcdv3-store v1.1.7/go.mod h1:Xpg7atDZZvKO4mjnSlYFCDHOzSJeAYYwCBi8o+sTLSg=
 github.com/mloves0824/libkv-etcdv3-store v1.1.8-0.20200728083713-3725a493fb53 h1:XJaN35YATLTbYVKIlDeeS8rnRXPvUlFQu87QxQ53Lr8=
 github.com/mloves0824/libkv-etcdv3-store v1.1.8-0.20200728083713-3725a493fb53/go.mod h1:ZOnyS1b2AoqN2e6U1HHL7PyoIZLHAznX8kL3nPwA/5M=
 github.com/modern-go/concurrent v0.0.0-20180228061459-e0a39a4cb421/go.mod h1:6dJC0mAP4ikYIbvyc7fijjWJddQyLn8Ig3JB5CqoB9Q=
