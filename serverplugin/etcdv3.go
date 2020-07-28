@@ -12,8 +12,8 @@ import (
 
 	"github.com/docker/libkv"
 	"github.com/docker/libkv/store"
+	etcd "github.com/mloves0824/libkv-etcdv3-store"
 	metrics "github.com/rcrowley/go-metrics"
-	etcd "github.com/smallnest/libkv-etcdv3-store"
 	"github.com/smallnest/rpcx/log"
 )
 
