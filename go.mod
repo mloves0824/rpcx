@@ -22,13 +22,12 @@ require (
 	github.com/kavu/go_reuseport v1.5.0
 	github.com/kr/pretty v0.2.0
 	github.com/lucas-clemente/quic-go v0.15.5
-	github.com/mloves0824/libkv-etcdv3-store v1.1.7
+	github.com/mloves0824/libkv-etcdv3-store v1.1.8-0.20200728083713-3725a493fb53
 	github.com/nacos-group/nacos-sdk-go v0.0.0-20191128082542-fe1b325b125c
 	github.com/opentracing/opentracing-go v1.1.0
 	github.com/rcrowley/go-metrics v0.0.0-20200313005456-10cdbea86bc0
 	github.com/rs/cors v1.7.0
 	github.com/rubyist/circuitbreaker v2.2.1+incompatible
-	github.com/smallnest/libkv-etcdv3-store v1.1.3
 	github.com/smallnest/quick v0.0.0-20200501131359-9534f3d77602
 	github.com/smallnest/rpcx/v5 v5.7.1
 	github.com/smallnest/valkeyrie v0.0.0-20191030065038-13edeca3d026
