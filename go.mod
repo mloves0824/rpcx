@@ -5,6 +5,8 @@ go 1.13
 require (
 	github.com/ChimeraCoder/gojson v1.1.0
 	github.com/abronan/valkeyrie v0.0.0-20200127174252-ef4277a138cd
+	github.com/aliyun/alibaba-cloud-sdk-go v1.61.356 // indirect
+	github.com/anacrolix/envpprof v1.1.1 // indirect
 	github.com/anacrolix/utp v0.0.0-20180219060659-9e0e1d1d0572
 	github.com/apache/thrift v0.13.0
 	github.com/docker/libkv v0.2.1
@@ -20,9 +22,11 @@ require (
 	github.com/juju/ratelimit v1.0.1
 	github.com/julienschmidt/httprouter v1.2.0
 	github.com/kavu/go_reuseport v1.5.0
+	github.com/klauspost/reedsolomon v1.9.9 // indirect
 	github.com/kr/pretty v0.2.0
 	github.com/lucas-clemente/quic-go v0.15.5
-	github.com/mloves0824/libkv-etcdv3-store v1.1.8-0.20200728083713-3725a493fb53
+	github.com/mloves0824/libkv-etcdv3-store v1.1.8
+	github.com/mmcloughlin/avo v0.0.0-20200523190732-4439b6b2c061 // indirect
 	github.com/nacos-group/nacos-sdk-go v0.0.0-20191128082542-fe1b325b125c
 	github.com/opentracing/opentracing-go v1.1.0
 	github.com/rcrowley/go-metrics v0.0.0-20200313005456-10cdbea86bc0
@@ -34,6 +38,7 @@ require (
 	github.com/soheilhy/cmux v0.1.4
 	github.com/syndtr/goleveldb v1.0.0
 	github.com/tatsushid/go-fastping v0.0.0-20160109021039-d7bb493dee3e
+	github.com/tjfoc/gmsm v1.3.2 // indirect
 	github.com/valyala/fastrand v1.0.0
 	github.com/vmihailenco/msgpack v4.0.4+incompatible
 	github.com/xtaci/kcp-go v5.4.20+incompatible
