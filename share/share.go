@@ -1,8 +1,8 @@
 package share
 
 import (
-	"github.com/smallnest/rpcx/v5/codec"
-	"github.com/smallnest/rpcx/v5/protocol"
+	"github.com/mloves0824/rpcx/v5/codec"
+	"github.com/mloves0824/rpcx/v5/protocol"
 )
 
 const (

@@ -13,7 +13,7 @@ import (
 	"github.com/abronan/valkeyrie"
 	"github.com/abronan/valkeyrie/store"
 	metrics "github.com/rcrowley/go-metrics"
-	"github.com/smallnest/rpcx/v5/log"
+	"github.com/mloves0824/rpcx/v5/log"
 	"github.com/smallnest/valkeyrie/store/redis"
 )
 
