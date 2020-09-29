@@ -2,6 +2,7 @@ package client
 
 import (
 	"context"
+	"github.com/opentracing/opentracing-go/log"
 
 	opentracing "github.com/opentracing/opentracing-go"
 	"github.com/opentracing/opentracing-go/ext"
@@ -40,6 +41,7 @@ func (p *OpenTracingPlugin) DoPostCall(ctx context.Context, servicePath, service
 	if rpcxContext, ok := ctx.(*share.Context); ok {
 		span1 := rpcxContext.Value(share.OpentracingSpanClientKey)
 		if span1 != nil {
+			span1.(opentracing.Span).LogKV(log.String("err", err.Error()))
 			span1.(opentracing.Span).Finish()
 		}
 	}
