@@ -2,15 +2,15 @@ package client
 
 import (
 	"context"
-
+	"github.com/mloves0824/rpcx/v5/share"
 	opentracing "github.com/opentracing/opentracing-go"
 	"github.com/opentracing/opentracing-go/ext"
-	"github.com/smallnest/rpcx/share"
+	"github.com/opentracing/opentracing-go/log"
 )
 
 type OpenTracingPlugin struct{}
 
-func (p *OpenTracingPlugin) PreCall(ctx context.Context, servicePath, serviceMethod string, args interface{}) error {
+func (p *OpenTracingPlugin) DoPreCall(ctx context.Context, servicePath, serviceMethod string, args interface{}) error {
 	var span1 opentracing.Span
 
 	// if it is called in rpc service in case that a service calls antoher service,
@@ -36,10 +36,11 @@ func (p *OpenTracingPlugin) PreCall(ctx context.Context, servicePath, serviceMet
 	}
 	return nil
 }
-func (p *OpenTracingPlugin) PostCall(ctx context.Context, servicePath, serviceMethod string, args interface{}, reply interface{}, err error) error {
+func (p *OpenTracingPlugin) DoPostCall(ctx context.Context, servicePath, serviceMethod string, args interface{}, reply interface{}, err error) error {
 	if rpcxContext, ok := ctx.(*share.Context); ok {
 		span1 := rpcxContext.Value(share.OpentracingSpanClientKey)
 		if span1 != nil {
+			span1.(opentracing.Span).LogKV(log.String("err", err.Error()))
 			span1.(opentracing.Span).Finish()
 		}
 	}
